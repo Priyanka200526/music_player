@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.4/lottie.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="small-container">
+            <div class="firstbox">
+                <i class="ri-arrow-down-s-line playlistIcon"></i>
+                <h2>Now Playing</h2>
+                <i class="ri-more-fill"></i>
+            </div>
+            <div class="firstsmall-container" style="display: none;">
+                <div class="secondbox">
+                    <img src="photos.jpg" alt="photo">
+                </div>
+
+                <div id="lottie-container"></div>
+                <div class="thirdbox">
+                    <div class="song-name">
+                        <h3> Love Is Gone - Acoustic</h3>
+                        <h4>SLANDER, Dylan Matthew</h4>
+                    </div>
+                    <input type="range" id="seekBar" value="0" min="0" max="100">
+                    <div class="time-display">
+                        <span id="currentTime">0:00</span><span id="totalDuration">0:00</span>
+                    </div>
+                    <div class="buttons">
+                        <button id="resetbtn"><i class="ri-repeat-fill"></i></button>
+                        <button><i class="ri-skip-back-fill"></i></button>
+                        <button><i class="ri-play-circle-fill" id="playbtn"></i></button>
+                        <button><i class="ri-skip-forward-fill"></i></button>
+                        <button> <i class="ri-play-list-fill playlistIcon"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="secondsmall-container" style="display: none;">
+                <ul id="songList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
